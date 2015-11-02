@@ -1,7 +1,6 @@
-root "gossip#index"
-get "public", to: "gossip#index"
-get "secret", to: "secret#index"
-get "really_secret", to: "secret#really_secret"
+Rails.application.routes.draw do
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
