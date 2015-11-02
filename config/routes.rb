@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'gossip/index'
+
+  get 'secret/index'
+
+  get 'secret/really_secret'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
