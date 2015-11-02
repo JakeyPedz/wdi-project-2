@@ -24,7 +24,7 @@ class StoriesController < ApplicationController
   # POST /stories
   # POST /stories.json
   def create
-    @story = Story.new(story_params)
+    @story = current_user.stories.new(story_params)
 
     respond_to do |format|
       if @story.save
@@ -54,7 +54,7 @@ class StoriesController < ApplicationController
   # DELETE /stories/1
   # DELETE /stories/1.json
   def destroy
-    @story.destroy
+    current_user.stories.find(params[:id]).destroy
     respond_to do |format|
       format.html { redirect_to stories_url, notice: 'Story was successfully destroyed.' }
       format.json { head :no_content }
@@ -69,6 +69,6 @@ class StoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def story_params
-      params.require(:story).permit(:title, :content, :user_id)
+      params.require(:story).permit(:title, :content, :user_id, locations_ids: [], categories_ids: [])
     end
 end
