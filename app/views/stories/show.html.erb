@@ -25,6 +25,11 @@
   <%= link_to "Like", like_story_path(@story), method: :put %>
 </p>
 
+<p>
+   <b>Image:</b>
+   <%= image_tag @stories.user_image.url %>
+ </p>
+
 
 <%= render partial: 'comments/form', locals: { commentable: @story } %>
 <%= render partial: 'comments/comment', collection: @comments, locals: { commentable: @story } %>
