@@ -28,6 +28,6 @@
     <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "button expand" %>
   </div>
 <% end %>

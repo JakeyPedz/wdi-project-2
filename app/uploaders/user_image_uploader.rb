@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-class GraffitiImageUploader < CarrierWave::Uploader::Base
+class UserImageUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick

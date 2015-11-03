@@ -116,7 +116,7 @@ $include-html-global-classes: $include-html-classes;
 // $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #FE0; // #008CBA;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -838,7 +838,7 @@ $include-html-global-classes: $include-html-classes;
 // Off Canvas Tab Bar Variables
 // $include-html-off-canvas-classes: $include-html-classes;
 
-// $tabbar-bg: $oil;
+$tabbar-bg: #e32; // $oil;
 // $tabbar-height: rem-calc(45);
 // $tabbar-icon-width: $tabbar-height;
 // $tabbar-line-height: $tabbar-height;

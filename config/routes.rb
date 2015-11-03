@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :locations
   resources :categories
   devise_for :users
+  resources :users, only: [:index, :show]
   resources :stories do
     member do
       put "like", to: "stories#upvote"

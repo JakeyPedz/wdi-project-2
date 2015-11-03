@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 # Gemfile
+gem 'rmagick'
 gem 'carrierwave'
 gem 'acts_as_commentable'
 gem 'acts_as_votable'
