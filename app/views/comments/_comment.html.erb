@@ -1,0 +1,7 @@
+<li>
+  <ul>
+    <li><%= comment.user.try(:email) %></li>
+    <li><%= comment.comment %></li>
+    <li><%= link_to 'Delete Comment', comment_path(comment, commentable_type: commentable.class.to_s.underscore, commentable_id: commentable.id), method: :delete, data: { confirm: 'Are you sure?' } %></li>
+  </ul>
+</li> 

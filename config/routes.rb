@@ -8,4 +8,5 @@ Rails.application.routes.draw do
       put "like", to: "stories#upvote"
     end
   end
+  resources :comments, only: [:create, :destroy]
 end

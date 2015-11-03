@@ -26,6 +26,8 @@
 </p>
 
 
+<%= render partial: 'comments/form', locals: { commentable: @story } %>
+<%= render partial: 'comments/comment', collection: @comments, locals: { commentable: @story } %>
 
 
 <%= link_to 'Edit', edit_story_path(@story) %> |
