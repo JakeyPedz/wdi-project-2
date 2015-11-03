@@ -24,7 +24,7 @@ class StoriesController < ApplicationController
 
   def upvote
     @story = Story.find(params[:id])
-    @story.upvote_by current_user
+    @story.upvote_by current_user, vote_scope: params[:vote_scope]
     redirect_to story_path
   end
 

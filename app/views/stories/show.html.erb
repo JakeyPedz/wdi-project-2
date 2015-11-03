@@ -20,10 +20,21 @@
   <strong><%= @story.get_upvotes.size %> fellows applauding</strong>
 </p>
 
-<p>
-  <strong>Applaud this Anecjoke:</strong>
-  <%= link_to "Like", like_story_path(@story), method: :put %>
-</p>
+<ul class="emoji-votes">
+  <li>
+    <%= link_to "Like", like_story_path(@story, vote_scope: "applaud"), method: :put %>
+  </li>
+  <li><%= link_to "fresh", like_story_path(@story, vote_scope: "fresh"), method: :put %>
+  <li><%= link_to "lol", like_story_path(@story, vote_scope: "lol"), method: :put %>
+  <li><%= link_to "omg", like_story_path(@story, vote_scope: "omg"), method: :put %>
+  <li><%= link_to "cute", like_story_path(@story, vote_scope: "cute"), method: :put %>
+  <li><%= link_to "win", like_story_path(@story, vote_scope: "win"), method: :put %>
+  <li><%= link_to "fail", like_story_path(@story, vote_scope: "fail"), method: :put %>
+  <li><%= link_to "wtf", like_story_path(@story, vote_scope: "wtf"), method: :put %>
+  <li><%= link_to "popular", like_story_path(@story, vote_scope: "popular"), method: :put %>
+</ul>
+
+
 
 <%= render partial: 'comments/form', locals: { commentable: @story } %>
 <%= render partial: 'comments/comment', collection: @comments, locals: { commentable: @story } %>

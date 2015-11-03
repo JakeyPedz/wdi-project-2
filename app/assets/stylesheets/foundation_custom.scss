@@ -13,3 +13,22 @@
   max-width: 600px;
   margin: 0 auto;
 }
+
+.emoji-votes {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.emoji-votes li {
+  display: inline-block;
+  background: #FE0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.emoji-votes li a {
+  color: #fff;
+}
