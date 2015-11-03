@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 # Gemfile
+gem 'acts_as_votable'
 gem 'foundation-rails'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
