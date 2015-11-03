@@ -5,5 +5,17 @@
   <%= @category.name %>
 </p>
 
+<ul>
+  <% @category.stories.each do |story| %>
+  <li>
+    <ul>
+      <li><%= story.title %></li>
+      <li><%= story.content %></li>
+    </ul>
+  </li>
+  <% end %>
+</ul>
+
+
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
