@@ -21,6 +21,12 @@ class StoriesController < ApplicationController
   def edit
   end
 
+  def upvote
+    @story = Story.find(params[:id])
+    @story.upvote_by current_user
+    redirect_to story_path
+  end
+
   # POST /stories
   # POST /stories.json
   def create

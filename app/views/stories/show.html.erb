@@ -15,5 +15,18 @@
   <%= @story.user %>
 </p>
 
+<p>
+  <strong><%= @story.get_upvotes.size %> fellows applauding</strong>
+  
+</p>
+
+<p>
+  <strong>Applaud this Anecjoke:</strong>
+  <%= link_to "Like", like_story_path(@story), method: :put %>
+</p>
+
+
+
+
 <%= link_to 'Edit', edit_story_path(@story) %> |
 <%= link_to 'Back', stories_path %>
