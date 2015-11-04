@@ -34,6 +34,7 @@
           <li><label>Foundation</label></li>
           <li><%= link_to "Users", users_path %></li>
           <li><%= link_to "Stories", stories_path %></li>
+          <li><%= link_to "New Story", new_story_path %></li>
           <li><%= link_to "Categories", categories_path %></li>
           <li><%= link_to "Locations", locations_path %></li>
         </ul>
@@ -43,6 +44,7 @@
         <ul class="off-canvas-list">
           <li><label>Users</label></li>
           <% if user_signed_in? %>
+          <li><%= link_to current_user.try(:username), current_user %></li>
           <li><%= link_to "Edit Profile", edit_user_registration_path(current_user) %></li>
           <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
           <% else %>
@@ -53,24 +55,21 @@
       </aside>
 
       <section class="main-section">
+        <div class="large-12 columns">
+          <% flash.each do |name, message| %>
+          <div class="flash-message-<%= name %>">
+            <%= message %>
+          </div>
+          <% end %>
 
-        <!--<% flash.each do |name, message| %>
-        <div class="flash-message-<%= name %>">
-          <%= message %>
+        <%= yield %>          
         </div>
-        <% end %>-->
+      </section>
 
+      <a class="exit-off-canvas"></a>
 
-
-    </section>
-
-    <a class="exit-off-canvas"></a>
-
+    </div>
   </div>
-</div>
-
-<%= yield %>
-
 
 </body>
 </html>

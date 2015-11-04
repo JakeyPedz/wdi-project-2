@@ -4,5 +4,12 @@
 
 #mapIndex{
   height: 100%; 
-  width: 75%; 
+  min-height: 300px;
+  min-width: 400px; 
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

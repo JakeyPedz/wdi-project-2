@@ -10,7 +10,7 @@
 
   <div class="field">
     <%= f.label :username %><br />
-    <%= f.file_field :username %>
+    <%= f.text_field :username %>
   </div>
 
   <div class="field">
@@ -49,6 +49,6 @@
 
 <h3>Cancel my account</h3>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<p>Not enjoying the vibes? <%= button_to "Rid yourself of AnecJokes", registration_path(resource_name), data: { confirm: "Would you like less laughs in your life" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
