@@ -34,7 +34,7 @@
 <script type="text/javascript">
   var latLng = {lat: <%= @location.latitude %>, lng: <%= @location.longitude %>},
       map,
-      maker;
+      marker;
   function initMap() {
     map = new google.maps.Map(document.getElementById('mapShow'), {
       center: latLng,
@@ -44,7 +44,8 @@
     marker = new google.maps.Marker({
       position: latLng,
       map: map,
-      title: 'Hello World!'
+      title: 'Hello World!', 
+      icon: "http://i.imgur.com/d9296D8.png"
     });
   }
 </script>
