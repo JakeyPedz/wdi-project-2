@@ -29,14 +29,14 @@
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
 
-<div id="map"></div>
+<div id="mapShow"></div>
 
 <script type="text/javascript">
   var latLng = {lat: <%= @location.latitude %>, lng: <%= @location.longitude %>},
       map,
       maker;
   function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.getElementById('mapShow'), {
       center: latLng,
       zoom: 15
     });

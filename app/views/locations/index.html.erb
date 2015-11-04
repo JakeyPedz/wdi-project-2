@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+
 <h1>Listing Locations</h1>
 
 <table>
@@ -12,6 +13,23 @@
     </tr>
   </thead>
 
+
+  <div id="mapIndex"></div>
+
+
+  <script type="text/javascript">
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('mapIndex'), {
+      center: {lat: 0, lng: 0},
+      zoom: 2
+    });
+  }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOMfikVQx8Z0_BR3gFrP2RoQz9QD7Krvk&callback=initMap">
+</script>
+
   <tbody>
     <% @locations.each do |location| %>
       <tr>
@@ -22,10 +40,25 @@
         <td><%= link_to 'Edit', edit_location_path(location) %></td>
         <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+      <% if location.latitude? && location.longitude? %>
+      <script type="text/javascript">
+      latLng = {lat: <%= location.latitude %>, lng: <%= location.longitude%>}
+      function markMarkers(){
+        marker = new google.maps.Marker({
+          position: latLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+      markMarkers()
+      </script>
+      <% end %>
+
     <% end %>
   </tbody>
 </table>
 
 <br>
+
 
 <%= link_to 'New Location', new_location_path %>
