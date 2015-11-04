@@ -3,10 +3,7 @@ Story.destroy_all
 Category.destroy_all
 Location.destroy_all
 
-u1 = User.create!(email: "j@ke.wf", password: "password", username: "Pedro", image: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/08a/210/1747cab.jpg")
-
-# By using u1.stories -> we automatically populate user_id in that story
-# s1 = u1.stories.create(title: "Amazing story", content: "Here is a story")
+# , category: "😉 🍸 🌱", location: "London"
 
 # Categories
 cat1 = Category.create!(name: "🛁")      # washing      SMILEYS & PEOPLE
@@ -391,3 +388,16 @@ loc46  = Location.create!(name: "Carlton Drive, Putney")
 # loc27 = Location.create!(name: "London")
 # loc28 = Location.create!(name: "Paris")
 # loc29 = Location.create!(name: "Paris")
+
+u1 = User.create!(email: "j@ke.wf", password: "password", username: "Pedro", image: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/08a/210/1747cab.jpg", tagline: "Chilled out entertainer")
+
+# By using u1.stories -> we automatically populate user_id in that story
+s1 = u1.stories.create(title: "The first Anecjoke seedling", content: "Obviously it has to be David Niven's story about the prawn which I hope will inspire all of you anecists out there on your mission to chortle and rofl. https://www.youtube.com/watch?v=HvtrWuLXuzQ")
+
+s1.categories << cat5
+s1.categories << cat6
+s1.categories << cat12
+s1.categories << cat20
+s1.locations << loc1
+s1.locations << loc2
+s1.save

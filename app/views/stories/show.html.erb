@@ -16,6 +16,16 @@
   <%= image_tag @story.user.image_url %>
 </p>
 
+<p><strong>Category</strong></p>
+<% @story.categories.each do |category| %>
+  <p><%= category.name %></p>
+<% end %>
+
+<p><strong>Location</strong></p>
+<% @story.locations.each do |location| %>
+  <p><%= location.name %></p>
+<% end %>
+
 <p>
   <strong><%= @story.get_upvotes.size %> fellows applauding</strong>
 </p>
