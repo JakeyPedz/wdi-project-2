@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 # Gemfile
+
+gem 'geocoder'
 gem 'rmagick'
 gem 'carrierwave'
 gem 'acts_as_commentable'
