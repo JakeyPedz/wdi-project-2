@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
-  root "stories#index"
+
+  authenticated :user do
+    devise_scope :user do
+      root to: "stories#index", :as => "authenticated_root"
+    end
+  end
+
+  unauthenticated do
+    devise_scope :user do
+      root to: "home#home", :as => "unauthenticated_root"
+    end
+  end
+
   resources :locations
   resources :categories
   devise_for :users

@@ -3,7 +3,7 @@ Story.destroy_all
 Category.destroy_all
 Location.destroy_all
 
-u1 = User.create!(email: "j@ke.wf", password: "password")
+u1 = User.create!(email: "j@ke.wf", password: "password", username: "Pedro", image: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/08a/210/1747cab.jpg")
 
 # By using u1.stories -> we automatically populate user_id in that story
 # s1 = u1.stories.create(title: "Amazing story", content: "Here is a story")
