@@ -394,10 +394,25 @@ u1 = User.create!(email: "j@ke.wf", password: "password", username: "Pedro", ima
 # By using u1.stories -> we automatically populate user_id in that story
 s1 = u1.stories.create(title: "The first Anecjoke seedling", content: "Obviously it has to be David Niven's story about the prawn which I hope will inspire all of you anecists out there on your mission to chortle and rofl. https://www.youtube.com/watch?v=HvtrWuLXuzQ")
 
-s1.categories << cat5
-s1.categories << cat6
-s1.categories << cat12
-s1.categories << cat20
+s1.categories << cat99
+s1.categories << cat7
+s1.categories << cat54
 s1.locations << loc1
-s1.locations << loc2
 s1.save
+
+u2 = User.create!(email: "magic@archiemanners.com", password: "archiemanners", username: "Little Miss Magic", image: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/08a/210/1747cab.jpg", tagline: "The Society Magician")
+
+s2 = u1.stories.create(title: "Thunderpants", content: "I came over spontaneously to perform magic for Jake and Jenno's parents. After some seriously honky cheese and wonderfully aged port I popped outside to smoke a cigarette in the moonlight. I had the good luck of having Hugh's marvellously put together mother join me. She told such a good joke just as I took a deep drag of my Rothman. My body did not know what to do; whether to laugh or inhale. In the end tried doing both and the result could not have been worse. Everyone could hear the sound of a trumpet, but it was very far from the object that welcomes her majesty to Ascot.")
+
+s2.categories << cat174
+s2.categories << cat178
+s2.categories << cat176
+s2.categories << cat168
+s2.categories << cat169
+s2.categories << cat129
+s2.locations << loc46
+s2.save
+
+
+
+
