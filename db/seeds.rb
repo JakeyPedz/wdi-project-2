@@ -6,7 +6,7 @@ Location.destroy_all
 u1 = User.create!(email: "j@ke.wf", password: "password")
 
 # By using u1.stories -> we automatically populate user_id in that story
-s1 = u1.stories.create(title: "Amazing story", content: "Here is a story")
+# s1 = u1.stories.create(title: "Amazing story", content: "Here is a story")
 
 # Categories
 cat1 = Category.create!(name: "🛁")      # washing      SMILEYS & PEOPLE
@@ -286,8 +286,8 @@ loc41  = Location.create!(name: "Denver")
 loc42  = Location.create!(name: "Colorado")
 loc43  = Location.create!(name: "Aspen")
 loc44  = Location.create!(name: "St. Barths")
-# loc45  = Location.create!(name: "London")
-# loc46  = Location.create!(name: "Paris")
+loc45  = Location.create!(name: "Slades Farm, Guildford")
+loc46  = Location.create!(name: "Carlton Drive, Putney")
 # loc47  = Location.create!(name: "London")
 # loc48  = Location.create!(name: "Paris")
 # loc49  = Location.create!(name: "Paris")
