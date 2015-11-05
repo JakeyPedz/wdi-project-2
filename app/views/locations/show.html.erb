@@ -1,3 +1,4 @@
+<div class="row">
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -26,7 +27,8 @@
   function initMap() {
     map = new google.maps.Map(document.getElementById('mapShow'), {
       center: latLng,
-      zoom: 15
+      zoom: 15,
+      styles: jake_style
     });
 
     marker = new google.maps.Marker({
@@ -40,4 +42,4 @@
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOMfikVQx8Z0_BR3gFrP2RoQz9QD7Krvk&callback=initMap">
 </script>
-
+</div>

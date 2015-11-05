@@ -1,15 +1,24 @@
-<h1><%= @user.username %></h1>
+<div class="row">
+  <%= image_tag @user.image.thumb.url, class: "user-profile-image" %>
+  <h1><%= @user.username %></h1>
 
-<li><%= link_to (image_tag @user.image.thumb.url) %></li>
+  <ul class="user-show-stories">
+    <% @user.stories.each do |story| %>
+    <li>
+      <ul>
+        <li>
+          <%= link_to story.title, story %>
+        </li>
+        <li>
+          <%= story.content %>
+        </li>
+        <li><% story.categories.each do |category| %>
+          <%= category.name %>
+          <% end %></li>
 
-<ul>
-  <li>
-<% @user.stories.each do |story| %>
-  <%= link_to story.title, story %>
-  </li>
-  <li>
-  <%= story.content %>
-  </li>
-</ul>
-  
-<% end %>
+        </ul>
+      </li>
+
+      <% end %>
+    </ul>
+  </div>

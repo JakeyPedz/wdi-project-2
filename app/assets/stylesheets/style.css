@@ -74,12 +74,35 @@ h1 {
   margin-top: 30px;
 }
 
-.new joke {
+.new-joke {
   background-color: #002147;
   color: white;
-  padding: 2px 5px;
+  padding: 5px 10px;
+  margin: 10px auto;
+  display: block;
 }
 
-.new joke a {
+.new-joke a {
   color: white;
-  font-size: 12px;
+  font-size: 16px;
+}
+
+.user-show-image {
+  max-height: 300px;
+  float: left;
+}
+
+.user-profile-image {
+  max-width: 300px;
+  margin-right: 20px;
+  float: left;
+  margin-top: 30px;
+}
+
+.show-single-story {
+  margin-bottom: 30px;
+}
+
+.locations-table {
+  margin: 30px auto;
+}

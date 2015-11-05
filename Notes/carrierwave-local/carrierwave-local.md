@@ -1,6 +1,6 @@
 WDI
 ======
-## File Uploads with Carrier Wave
+# File Uploads with Carrier Wave
 [i]: Rails 4.2.1
 [i]: Carrierwave 0.10.0
 [i]: Rmagick 2.14.0

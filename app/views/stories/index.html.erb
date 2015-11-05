@@ -1,27 +1,16 @@
 <div class="row">
-<h1>Joke Bank</h1>
+  <h1>Joke Bank</h1>
 
-<% if current_user %>
-<button class="new joke"<%= link_to 'New AnecJoke', new_story_path %></button>
-<% end %>
-
-<div class="small-8 small-offset-2 columns"<ul>
-  <% @stories.each do |story| %>
-  <li>
-  <div class="story-index">
-    <ul class="single-story">
-      <li class="single-story-image"><%= link_to (image_tag story.user.image.thumb.url) %></li>
-      <li class="strong"><%= story.user.username %></li>
-      <li><%= story.title %></li>
-      <li><% story.categories.each do |category| %>
-          <%= category.name %>
-          <% end %></li>
-      <button class="amuse"><%= link_to 'Amuse Me', story %></button>
-    </ul>
-    </div>
-  </li>
+  <% if current_user %>
+  <button class="new-joke center"><%= link_to 'Deposit Anecjoke', new_story_path %></button>
   <% end %>
-</ul>
+
+  <div class="small-8 small-offset-2 columns">
+    <ul>
+      <%= render @stories %>
+    </ul>
+  </div>
+</div>
 
 
 

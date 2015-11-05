@@ -1,13 +1,14 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
 
-<ul class="small-block-grid-1 medium-8 medium-centered columns">
- 
-   <li><%= link_to (image_tag user.image.thumb.url), user %></li>
-  
-  <li>
+<p id="notice"><%= notice %></p>
+<div class="small-4 columns show-single-story">
+<%= image_tag @story.user.image_url, class: "user-show-image" %>
+</div>
+<div class=class="small-8 columns show-single-story">
+<ul>
+     <li>
     <strong>User:</strong>
     <%= @story.user.username %>
-    <%= image_tag @story.user.image_url %>
   </li>
   <li>
     <strong>Title:</strong>
@@ -21,11 +22,10 @@
     <strong>Category</strong>
   </li>
 
-  <% @story.categories.each do |category| %>
-    <li>
+  <li><% @story.categories.each do |category| %>
+    
       <%= category.name %>
-    </li>
-  <% end %>
+  <% end %></li>
   <li>
     <strong>Location</strong>
   </li>
@@ -54,10 +54,7 @@
     </ul>
   </li>
 </ul>
-
-
-
-
+</div>
 
 <%= render partial: 'comments/form', locals: { commentable: @story } %>
 <%= render partial: 'comments/comment', collection: @comments, locals: { commentable: @story } %>
@@ -72,6 +69,6 @@
 <% end %>
 <%= link_to 'Back', stories_path %>
 
-
+</div>
 
 
