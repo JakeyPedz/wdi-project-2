@@ -14,12 +14,11 @@
     <li><%= story.user.username %></li>
     <ul>
       <li><%= link_to 'Show', story %></li>
-      <li><%= link_to 'Edit', edit_story_path(story) %></li>
-      <li><%= link_to 'Destroy', story, method: :delete, data: { confirm: 'Are you sure?' } %></li>
     </ul>
   </ul>
   <% end %>
 </ul>
 
-
+<% if current_user %>
 <%= link_to 'New Story', new_story_path %>
+<% end %>
