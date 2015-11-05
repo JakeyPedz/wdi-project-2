@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>El Vibe:</strong>
   <%= @category.name %>
 </p>
 
@@ -10,11 +10,7 @@
   <li>
     <ul>
 
-    <% if story.user.image? %>
-    <li><%= link_to (image_tag story.user.image.url) %></li>
-    <% else %>
-    <li><%= link_to (image_tag story.user.image_link) %></li>
-    <% end %> 
+    <li><%= link_to (image_tag story.user.image.thumb.url) %></li>
 
       <li><%= story.user.username %></li>
       <li><%= story.title %></li>

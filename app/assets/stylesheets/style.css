@@ -73,3 +73,13 @@ h1 {
   font-size: 30px;
   margin-top: 30px;
 }
+
+.new joke {
+  background-color: #002147;
+  color: white;
+  padding: 2px 5px;
+}
+
+.new joke a {
+  color: white;
+  font-size: 12px;
