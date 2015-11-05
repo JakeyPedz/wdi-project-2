@@ -194,99 +194,99 @@ cat186 = Category.create!(name: "📱")     # phone
 cat187 = Category.create!(name: "📞")     # call
 cat188 = Category.create!(name: "💻")     # computer
 cat189 = Category.create!(name: "🎥")     # film
-cat190 = Category.create!(name: "📺")     # television
-cat191 = Category.create!(name: "📺")     # television
-cat192 = Category.create!(name: "📺")     # television
-cat193 = Category.create!(name: "📺")     # television
-cat194 = Category.create!(name: "📺")     # television
-cat195 = Category.create!(name: "📺")     # television
-cat196 = Category.create!(name: "📺")     # television
-cat197 = Category.create!(name: "📺")     # television
-cat198 = Category.create!(name: "📺")     # television
-cat199 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
-cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat191 = Category.create!(name: "📺")     # television
+# cat192 = Category.create!(name: "📺")     # television
+# cat193 = Category.create!(name: "📺")     # television
+# cat194 = Category.create!(name: "📺")     # television
+# cat195 = Category.create!(name: "📺")     # television
+# cat196 = Category.create!(name: "📺")     # television
+# cat197 = Category.create!(name: "📺")     # television
+# cat198 = Category.create!(name: "📺")     # television
+# cat199 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
+# cat190 = Category.create!(name: "📺")     # television
 
 
 # Locations
 loc1   = Location.create!(name: "London")
-# loc2   = Location.create!(name: "Paris")
-# loc3   = Location.create!(name: "New York")
-# loc4   = Location.create!(name: "Milan")
-# loc5   = Location.create!(name: "Kenya")
-# loc6   = Location.create!(name: "Nantucket")
-# loc7   = Location.create!(name: "Rome")
-# loc8   = Location.create!(name: "Barcelona")
-# loc9   = Location.create!(name: "Auckland")
-# loc10  = Location.create!(name: "St. Tropez")
-# loc10  = Location.create!(name: "The Isle of Mull")
-# loc11  = Location.create!(name: "St. Moritz")
-# loc12  = Location.create!(name: "Kos")
-# loc13  = Location.create!(name: "Corfu")
-# loc14  = Location.create!(name: "Mallorca")
-# loc15  = Location.create!(name: "Cuba")
-# loc16  = Location.create!(name: "Costa Rica")
-# loc17  = Location.create!(name: "Buenos Aires")
-# loc18  = Location.create!(name: "Hamptons")
-# loc19  = Location.create!(name: "Windsor")
-# loc20  = Location.create!(name: "Watamu")
-# loc21  = Location.create!(name: "Nanyuki")
-# loc22  = Location.create!(name: "Panama")
-# loc23  = Location.create!(name: "San Pedro")
-# loc24  = Location.create!(name: "Martel")
-# loc25  = Location.create!(name: "Belize")
-# loc26  = Location.create!(name: "Meribel")
-# loc27  = Location.create!(name: "Val d'Isere")
-# loc28  = Location.create!(name: "Chamonix")
-# loc29  = Location.create!(name: "Zurs")
-# loc30  = Location.create!(name: "Verbier")
-# loc31  = Location.create!(name: "Porto Erecole")
-# loc32  = Location.create!(name: "Porto")
-# loc33  = Location.create!(name: "Lisbon")
-# loc34  = Location.create!(name: "Houston")
-# loc35  = Location.create!(name: "Amsterdam")
-# loc36  = Location.create!(name: "Copenhagen")
-# loc37  = Location.create!(name: "London")
-# loc38  = Location.create!(name: "Athens")
-# loc39  = Location.create!(name: "Houston")
-# loc40  = Location.create!(name: "Dallas")
-# loc41  = Location.create!(name: "Denver")
-# loc42  = Location.create!(name: "Colorado")
-# loc43  = Location.create!(name: "Aspen")
-# loc44  = Location.create!(name: "St. Barths")
-# loc45  = Location.create!(name: "Slades Farm, Guildford")
+loc2   = Location.create!(name: "Paris")
+loc3   = Location.create!(name: "New York")
+loc4   = Location.create!(name: "Milan")
+loc5   = Location.create!(name: "Kenya")
+loc6   = Location.create!(name: "Nantucket")
+loc7   = Location.create!(name: "Rome")
+loc8   = Location.create!(name: "Barcelona")
+loc9   = Location.create!(name: "Auckland")
+loc10  = Location.create!(name: "St. Tropez")
+loc10  = Location.create!(name: "The Isle of Mull")
+loc11  = Location.create!(name: "St. Moritz")
+loc12  = Location.create!(name: "Kos")
+loc13  = Location.create!(name: "Corfu")
+loc14  = Location.create!(name: "Mallorca")
+loc15  = Location.create!(name: "Cuba")
+loc16  = Location.create!(name: "Costa Rica")
+loc17  = Location.create!(name: "Buenos Aires")
+loc18  = Location.create!(name: "Hamptons")
+loc19  = Location.create!(name: "Windsor")
+loc20  = Location.create!(name: "Watamu")
+loc21  = Location.create!(name: "Nanyuki")
+loc22  = Location.create!(name: "Panama")
+loc23  = Location.create!(name: "San Pedro")
+loc24  = Location.create!(name: "Martel")
+loc25  = Location.create!(name: "Belize")
+loc26  = Location.create!(name: "Meribel")
+loc27  = Location.create!(name: "Val d'Isere")
+loc28  = Location.create!(name: "Chamonix")
+loc29  = Location.create!(name: "Zurs")
+loc30  = Location.create!(name: "Verbier")
+loc31  = Location.create!(name: "Porto Erecole")
+loc32  = Location.create!(name: "Porto")
+loc33  = Location.create!(name: "Lisbon")
+loc34  = Location.create!(name: "Houston")
+loc35  = Location.create!(name: "Amsterdam")
+loc36  = Location.create!(name: "Copenhagen")
+loc37  = Location.create!(name: "London")
+loc38  = Location.create!(name: "Athens")
+loc39  = Location.create!(name: "Houston")
+loc40  = Location.create!(name: "Dallas")
+loc41  = Location.create!(name: "Denver")
+loc42  = Location.create!(name: "Colorado")
+loc43  = Location.create!(name: "Aspen")
+loc44  = Location.create!(name: "St. Barths")
+loc45  = Location.create!(name: "Slades Farm, Guildford")
 loc46  = Location.create!(name: "Carlton Drive, Putney")
-# # loc47  = Location.create!(name: "London")
-# # loc48  = Location.create!(name: "Paris")
+loc47  = Location.create!(name: "Bristol")
+loc48  = Location.create!(name: "Cowdray Polo Club")
 # # loc49  = Location.create!(name: "Paris")
 # # loc40  = Location.create!(name: "London")
 # # loc51  = Location.create!(name: "Paris")
@@ -397,7 +397,7 @@ s1 = u1.stories.create(title: "The first Anecjoke seedling", content: "Obviously
 s1.categories << cat99
 s1.categories << cat7
 s1.categories << cat54
-s1.locations << loc1
+s1.locations  << loc1
 s1.save
 
 u2 = User.create!(email: "magic@archiemanners.com", password: "archiemanners", username: "Archie Mandingo", image_link: "http://i.imgur.com/UImo0zO.jpg", tagline: "The Society Magician")
@@ -410,7 +410,7 @@ s2.categories << cat176
 s2.categories << cat168
 s2.categories << cat169
 s2.categories << cat129
-s2.locations << loc46
+s2.locations  << loc46
 s2.save
 
 u3 = User.create!(email: "sebwilliams@gmail.com", password: "sebwilliams", username: "Web Silliams", image_link: "http://i.imgur.com/qo6REsU.jpg", tagline: "The Shadow Caster")
@@ -420,9 +420,38 @@ s3 = u3.stories.create(title: "Casting Shadows", content: "https://www.facebook.
 s3.categories << cat18
 s3.categories << cat122
 s3.categories << cat128
-s3.locations << loc46
+s3.locations  << loc46
 s3.save
 
+u4 = User.create!(email: "jamesgraham@gmail.com", password: "jamesgraham", username: "Jimbo Graham", image_link: "http://i.imgur.com/puRH7Yq.jpg", tagline: "Gypo Graham")
 
+s4 = u4.stories.create(title: "A mid summer romance", content: "I need to spend time with her. Party on!")
 
+s4.categories << cat4
+s4.categories << cat98
+s4.categories << cat18  
+s4.locations  << loc24
+s4.save
+
+u5 = User.create!(email: "robrogan@gmail.com", password: "robrogan", username: "Job Dogan", image_link: "http://i.imgur.com/Fsypvru.jpg", tagline: "A hispanic tongue, in a South African's mouth.")
+
+s5 = u5.stories.create(title: "Favourite tune from Freshers (Zach Sobiech", content: "I fell down,down, down into this dark and lonely hole. There was no one there to care about me anymore. And I needed a way to climb and grab a hold of the edge. You were sitting there holding a rope. And we'll go up, up, up, But I'll fly a little higher, Go up in the clouds because the view's a little nicer, Up here my dear. It won't be long now, it won't be long now.")
+
+s5.categories << cat61
+s5.categories << cat176
+s5.categories << cat9 
+s5.categories << cat180
+s5.locations  << loc47
+s5.save
+
+u6 = User.create!(email: "frankhutley@gmail.com", password: "frankhutley", username: "Frönk le tönk ", image_link: "http://i.imgur.com/KsRcNk5.jpg", tagline: "F*ck the Conservatives.")
+
+s6 = u6.stories.create(title: "Driving down to Polo", content: "Literally do this the whole time.")
+
+s6.categories << cat27
+s6.categories << cat20
+s6.categories << cat185
+s6.categories << cat154
+s6.locations  << loc48
+s6.save
 
