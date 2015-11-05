@@ -1,24 +1,23 @@
-<h1>Listing Stories</h1>
+<h1>The Archive</h1>
 
+<ul class="small-block-grid-1 medium-8 medium-centered columns">
 
-
-<h2>Title</h2>
-<h2>Content</h2>
-<h2>User</h2>
-
-<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
   <% @stories.each do |story| %>
-  <ul>
-    <li><%= story.title %></li>
-    <li><%= story.content %></li>
-    <li><%= story.user.username %></li>
-    <ul>
+  <li>
+  <ul class="single-story">
+
+      <li><%= story.user.username %>; <%= story.user.tagline %></li>
+      <li><%= story.title %></li>
+      <li><%= story.content %></li>
+      
+
       <li><%= link_to 'Show', story %></li>
+
     </ul>
-  </ul>
+  </li>
   <% end %>
 </ul>
 
 <% if current_user %>
-<%= link_to 'New Story', new_story_path %>
+<%= link_to 'New AnecJoke', new_story_path %>
 <% end %>
