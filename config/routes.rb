@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: "stories#index"
+  root to: "home#home"
   # authenticated :user do
   #   devise_scope :user do
   #     root to: "stories#index", :as => "authenticated_root"

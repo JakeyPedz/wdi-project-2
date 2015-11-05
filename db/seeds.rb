@@ -287,9 +287,9 @@ loc45  = Location.create!(name: "Slades Farm, Guildford")
 loc46  = Location.create!(name: "Carlton Drive, Putney")
 loc47  = Location.create!(name: "Bristol")
 loc48  = Location.create!(name: "Cowdray Polo Club")
-# # loc49  = Location.create!(name: "Paris")
-# # loc40  = Location.create!(name: "London")
-# # loc51  = Location.create!(name: "Paris")
+loc49  = Location.create!(name: "Eton College")
+loc40  = Location.create!(name: "Sporting Page, London")
+loc51  = Location.create!(name: "Second Home, Shoreditch")
 # # loc52  = Location.create!(name: "London")
 # # loc53  = Location.create!(name: "Paris")
 # # loc54  = Location.create!(name: "Paris")
@@ -350,46 +350,46 @@ loc48  = Location.create!(name: "Cowdray Polo Club")
 # # loc109 = Location.create!(name: "Paris")
 # # loc110 = Location.create!(name: "London")
 # # loc111 = Location.create!(name: "Paris")
-# # loc22 = Location.create!(name: "London")
-# # loc23 = Location.create!(name: "Paris")
-# # loc24 = Location.create!(name: "Paris")
-# # loc25 = Location.create!(name: "London")
-# # loc26 = Location.create!(name: "Paris")
-# # loc27 = Location.create!(name: "London")
-# # loc28 = Location.create!(name: "Paris")
-# # loc29 = Location.create!(name: "Paris")
-# # loc20 = Location.create!(name: "London")
-# # loc21 = Location.create!(name: "Paris")
-# # loc22 = Location.create!(name: "London")
-# # loc23 = Location.create!(name: "Paris")
-# # loc24 = Location.create!(name: "Paris")
-# # loc25 = Location.create!(name: "London")
-# # loc26 = Location.create!(name: "Paris")
-# # loc27 = Location.create!(name: "London")
-# # loc28 = Location.create!(name: "Paris")
-# # loc29 = Location.create!(name: "Paris")
-# # loc20 = Location.create!(name: "London")
-# # loc21 = Location.create!(name: "Paris")
-# # loc22 = Location.create!(name: "London")
-# # loc23 = Location.create!(name: "Paris")
-# # loc24 = Location.create!(name: "Paris")
-# # loc25 = Location.create!(name: "London")
-# # loc26 = Location.create!(name: "Paris")
-# # loc27 = Location.create!(name: "London")
-# # loc28 = Location.create!(name: "Paris")
-# # loc29 = Location.create!(name: "Paris")
-# # loc20 = Location.create!(name: "London")
-# # loc21 = Location.create!(name: "Paris")
-# # loc22 = Location.create!(name: "London")
-# # loc23 = Location.create!(name: "Paris")
-# # loc24 = Location.create!(name: "Paris")
-# # loc25 = Location.create!(name: "London")
-# # loc26 = Location.create!(name: "Paris")
-# # loc27 = Location.create!(name: "London")
-# # loc28 = Location.create!(name: "Paris")
-# # loc29 = Location.create!(name: "Paris")
+# # loc122 = Location.create!(name: "London")
+# # loc123 = Location.create!(name: "Paris")
+# # loc124 = Location.create!(name: "Paris")
+# # loc125 = Location.create!(name: "London")
+# # loc126 = Location.create!(name: "Paris")
+# # loc127 = Location.create!(name: "London")
+# # loc128 = Location.create!(name: "Paris")
+# # loc129 = Location.create!(name: "Paris")
+# # loc120 = Location.create!(name: "London")
+# # loc121 = Location.create!(name: "Paris")
+# # loc122 = Location.create!(name: "London")
+# # loc123 = Location.create!(name: "Paris")
+# # loc124 = Location.create!(name: "Paris")
+# # loc125 = Location.create!(name: "London")
+# # loc126 = Location.create!(name: "Paris")
+# # loc127 = Location.create!(name: "London")
+# # loc128 = Location.create!(name: "Paris")
+# # loc129 = Location.create!(name: "Paris")
+# # loc120 = Location.create!(name: "London")
+# # loc121 = Location.create!(name: "Paris")
+# # loc122 = Location.create!(name: "London")
+# # loc123 = Location.create!(name: "Paris")
+# # loc124 = Location.create!(name: "Paris")
+# # loc125 = Location.create!(name: "London")
+# # loc126 = Location.create!(name: "Paris")
+# # loc127 = Location.create!(name: "London")
+# # loc128 = Location.create!(name: "Paris")
+# # loc129 = Location.create!(name: "Paris")
+# # loc120 = Location.create!(name: "London")
+# # loc121 = Location.create!(name: "Paris")
+# # loc122 = Location.create!(name: "London")
+# # loc123 = Location.create!(name: "Paris")
+# # loc124 = Location.create!(name: "Paris")
+# # loc125 = Location.create!(name: "London")
+# # loc126 = Location.create!(name: "Paris")
+# # loc127 = Location.create!(name: "London")
+# # loc128 = Location.create!(name: "Paris")
+# # loc129 = Location.create!(name: "Paris")
 
-u1 = User.create!(email: "j@ke.wf", password: "password", username: "Jakey Pedro", image_link: "http://i.imgur.com/oZV6Kq9.jpg", tagline: "A wanna be hipster-coder")
+u1 = User.create!(email: "j@ke.wf", password: "password", username: "Jakey Pedro", image_link: "http://i.imgur.com/oZV6Kq9.jpg", tagline: "wannabe-hipster-coder")
 
 # By using u1.stories -> we automatically populate user_id in that story
 s1 = u1.stories.create(title: "The first Anecjoke seedling", content: "Obviously it has to be David Niven's story about the prawn which I hope will inspire all of you anecists out there on your mission to chortle and rofl. https://www.youtube.com/watch?v=HvtrWuLXuzQ")
@@ -413,7 +413,7 @@ s2.categories << cat129
 s2.locations  << loc46
 s2.save
 
-u3 = User.create!(email: "sebwilliams@gmail.com", password: "sebwilliams", username: "Web Silliams", image_link: "http://i.imgur.com/qo6REsU.jpg", tagline: "The Shadow Caster")
+u3 = User.create!(email: "sebwilliams@gmail.com", password: "sebwilliams", username: "Web Silliams", image_link: "http://i.imgur.com/qo6REsU.jpg", tagline: "The Shadow Caster") 
 
 s3 = u3.stories.create(title: "Casting Shadows", content: "https://www.facebook.com/video.php?v=368033513394785&set=vb.100005644187384&type=3&theater")
 
@@ -435,7 +435,7 @@ s4.save
 
 u5 = User.create!(email: "robrogan@gmail.com", password: "robrogan", username: "Job Dogan", image_link: "http://i.imgur.com/Fsypvru.jpg", tagline: "A hispanic tongue, in a South African's mouth.")
 
-s5 = u5.stories.create(title: "Favourite tune from Freshers (Zach Sobiech", content: "I fell down,down, down into this dark and lonely hole. There was no one there to care about me anymore. And I needed a way to climb and grab a hold of the edge. You were sitting there holding a rope. And we'll go up, up, up, But I'll fly a little higher, Go up in the clouds because the view's a little nicer, Up here my dear. It won't be long now, it won't be long now.")
+s5 = u5.stories.create(title: "Favourite tune from Freshers (Zach Sobiech)", content: "I fell down,down, down into this dark and lonely hole. There was no one there to care about me anymore. And I needed a way to climb and grab a hold of the edge. You were sitting there holding a rope. And we'll go up, up, up, But I'll fly a little higher, Go up in the clouds because the view's a little nicer, Up here my dear. It won't be long now, it won't be long now.")
 
 s5.categories << cat61
 s5.categories << cat176
@@ -444,7 +444,7 @@ s5.categories << cat180
 s5.locations  << loc47
 s5.save
 
-u6 = User.create!(email: "frankhutley@gmail.com", password: "frankhutley", username: "Frönk le tönk ", image_link: "http://i.imgur.com/KsRcNk5.jpg", tagline: "F*ck the Conservatives.")
+u6 = User.create!(email: "frankhutley@gmail.com", password: "frankhutley", username: "Frönk le Tönk", image_link: "http://i.imgur.com/KsRcNk5.jpg", tagline: "F*ck the Conservatives.")
 
 s6 = u6.stories.create(title: "Driving down to Polo", content: "Literally do this the whole time.")
 
@@ -454,4 +454,48 @@ s6.categories << cat185
 s6.categories << cat154
 s6.locations  << loc48
 s6.save
+
+
+u7 = User.create!(email: "charleshirst@gmail.com", password: "charleshirst", username: "CJ", image_link: "http://i.imgur.com/ttwk5v2.jpg", tagline: "Pre-prep teacher by week, Prohet of Jah by weekend.")
+
+s7 = u7.stories.create(title: "Walking through Nolan's crack", content: "The joy of intercepting Heppel just before lunch and giving him a big ptttsssssstttttt.")
+
+s7.categories << cat137
+s7.categories << cat2
+s7.categories << cat90
+s7.categories << cat20
+s7.locations  << loc49
+s7.save
+
+u8 = User.create!(email: "harryhoare@gmail.com", password: "harryhoare", username: "Harry 'Half Hooned' Hoare", image_link: "http://i.imgur.com/zd6RaXh.jpg", tagline: "Hair Beeeeeaaaaaarrrr")
+
+s8 = u8.stories.create(title: "Daddy's Plane", content: "Is there any chance that we can make it an 8 seater?")
+
+s8.categories << cat165
+s8.categories << cat102
+s8.categories << cat23
+s8.locations  << loc40
+s8.save
+
+u9 = User.create!(email: "arnoudterwindt@gmail.com", password: "arnoudterwindt", username: "Arnoud - 'The Tulip Man' - Terwindt", image_link: "http://i.imgur.com/mCiTUgh.jpg", tagline: "The Flying Dutchman")
+
+s9 = u9.stories.create(title: "FinTech Shooting Weekend", content: "Just F'ing choke it out.")
+
+s9.categories << cat65
+s9.categories << cat20
+s9.categories << cat35
+s9.categories << cat176
+s9.locations  << loc45
+s9.save
+
+s10 = u1.stories.create(title: "GA-WDI-16-Boolean", content: "Love you guys...")
+
+s10.categories << cat22
+s10.categories << cat188
+s10.categories << cat168
+s10.categories << cat182
+s10.locations  << loc51
+s10.save
+
+
 

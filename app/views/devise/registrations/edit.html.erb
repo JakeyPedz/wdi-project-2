@@ -1,3 +1,4 @@
+<div class="row">
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
@@ -43,7 +44,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Update" %>
+    <%= f.submit "Update", class: "button expand" %>
   </div>
 <% end %>
 
@@ -52,3 +53,4 @@
 <p>Not enjoying the vibes? <%= button_to "Rid yourself of AnecJokes", registration_path(resource_name), data: { confirm: "Would you like less laughs in your life" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
+</div>

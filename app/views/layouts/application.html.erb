@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+  <link href='https://fonts.googleapis.com/css?family=Poppins:400,700' rel='stylesheet' type='text/css'>
 
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "vendor/modernizr" %>
@@ -13,67 +14,18 @@
 </head>
 
 <body>
-  <div class="off-canvas-wrap" data-offcanvas>
-    <div class="inner-wrap">
-      <nav class="tab-bar">
-        <section class="left-small">
-          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-        </section>
-
-        <section class="middle tab-bar-section">
-          <h1 class="title">ANECJOKES</h1>
-        </section>
-
-        <section class="right-small">
-          <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-        </section>
-      </nav>
-
-      <aside class="left-off-canvas-menu">
-        <ul class="off-canvas-list">
-          <li><label>Foundation</label></li>
-          <li><%= link_to "anecists", users_path %></li>
-          <li><%= link_to "anecjokes", stories_path %></li>
-          <li><%= link_to "vibes", categories_path %></li>
-          <li><%= link_to "locations", locations_path %></li>
-        </ul>
-      </aside>
-
-      <aside class="right-off-canvas-menu">
-        <ul class="off-canvas-list">
-          <li><label>Users</label></li>
-          <% if user_signed_in? %>
-          <li><%= link_to current_user.try(:username), current_user %></li>
-          <li><%= link_to "Edit Profile", edit_user_registration_path(current_user) %></li>
-          <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-          <% else %>
-          <li><%= link_to "Register", new_user_registration_path %></li>
-          <li><%= link_to "Login", new_user_session_path %></li>
-          <% end %>
-        </ul>
-      </aside>
-
-      <section class="main-section">
-        <div class="large-12 columns">
-          <% flash.each do |name, message| %>
-          <div class="flash-message-<%= name %>">
-            <%= message %>
-          </div>
-          <% end %>
-
-        </div>
-      </section>
-
-
-
-
-      <a class="exit-off-canvas"></a>
-
+<header>
+    <div class="row">
+      <%= render 'header' %>
     </div>
+</header>
+      <% flash.each do |name, message| %>
+      <div class="flash-message-<%= name %>">
+        <%= message %>
+      </div>
+      <% end %>
 
-  </div>
-
-  <%= yield %>          
+      <%= yield %>          
 
 
 </body>
