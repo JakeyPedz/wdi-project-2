@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :location_ids, "Choose locations" %><br>
-    <%= f.collection_check_boxes :location_ids, Location.all, :id, :name %>
+    <%= f.collection_select :location_ids, Location.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :category_ids, "Choose vibe" %><br>

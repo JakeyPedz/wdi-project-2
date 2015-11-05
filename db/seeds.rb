@@ -389,7 +389,7 @@ loc46  = Location.create!(name: "Carlton Drive, Putney")
 # # loc28 = Location.create!(name: "Paris")
 # # loc29 = Location.create!(name: "Paris")
 
-u1 = User.create!(email: "j@ke.wf", password: "password", username: "Pedro", image: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/08a/210/1747cab.jpg", tagline: "Chilled out entertainer")
+u1 = User.create!(email: "j@ke.wf", password: "password", username: "Jakey Pedro", image_link: "http://i.imgur.com/oZV6Kq9.jpg", tagline: "A wanna be hipster-coder")
 
 # By using u1.stories -> we automatically populate user_id in that story
 s1 = u1.stories.create(title: "The first Anecjoke seedling", content: "Obviously it has to be David Niven's story about the prawn which I hope will inspire all of you anecists out there on your mission to chortle and rofl. https://www.youtube.com/watch?v=HvtrWuLXuzQ")
@@ -400,7 +400,7 @@ s1.categories << cat54
 s1.locations << loc1
 s1.save
 
-u2 = User.create!(email: "magic@archiemanners.com", password: "archiemanners", username: "Archie Mandingo", image: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/08a/210/1747cab.jpg", tagline: "The Society Magician")
+u2 = User.create!(email: "magic@archiemanners.com", password: "archiemanners", username: "Archie Mandingo", image_link: "http://i.imgur.com/UImo0zO.jpg", tagline: "The Society Magician")
 
 s2 = u2.stories.create(title: "Thunderpants", content: "I came over spontaneously to perform magic for Jake and Jenno's parents. After some seriously honky cheese and wonderfully aged port I popped outside to smoke a cigarette in the moonlight. I had the good luck of having Hugh's marvellously put together mother join me. She told such a good joke just as I took a deep drag of my Rothman. My body did not know what to do; whether to laugh or inhale. In the end tried doing both and the result could not have been worse. Everyone could hear the sound of a trumpet, but it was very far from the object that welcomes her majesty to Ascot.")
 
@@ -413,7 +413,7 @@ s2.categories << cat129
 s2.locations << loc46
 s2.save
 
-u3 = User.create!(email: "sebwilliams@gmail.com", password: "sebwilliams", username: "Web Silliams", image: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/08a/210/1747cab.jpg", tagline: "The Shadow Caster")
+u3 = User.create!(email: "sebwilliams@gmail.com", password: "sebwilliams", username: "Web Silliams", image_link: "http://i.imgur.com/qo6REsU.jpg", tagline: "The Shadow Caster")
 
 s3 = u3.stories.create(title: "Casting Shadows", content: "https://www.facebook.com/video.php?v=368033513394785&set=vb.100005644187384&type=3&theater")
 
