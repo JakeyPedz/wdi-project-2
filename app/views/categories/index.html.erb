@@ -1,24 +1,17 @@
 <h1>Listing Categories</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<ul class="small-block-grid-3 medium-block-grid-6 large-block-grid-9">
+  <% @categories.each do |category| %>
+  <li>
+    <ul>
+      <li><%= category.name %></li>
+      <li><%= link_to 'Show', category %></li>
+      <li><%= link_to 'Edit', edit_category_path(category) %></li>
+      <li><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+    </ul>
+  </li>
+  <% end %>
+</ul>
 
-  <tbody>
-    <% @categories.each do |category| %>
-      <tr>
-        <td><%= category.name %></td>
-        <td><%= link_to 'Show', category %></td>
-        <td><%= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
 
 <%= link_to 'New Category', new_category_path %>
