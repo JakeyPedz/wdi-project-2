@@ -1,52 +1,65 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @story.title %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @story.content %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @story.user.username %>
-  <%= image_tag @story.user.image_url %>
-</p>
-
-<p><strong>Category</strong></p>
-<% @story.categories.each do |category| %>
-  <p><%= category.name %></p>
-<% end %>
-
-<p><strong>Location</strong></p>
-<% @story.locations.each do |location| %>
-  <p><%= location.name %></p>
-<% end %>
-
-<p>
-  <strong><%= @story.get_upvotes.size %> fellows applauding</strong>
-</p>
-
-<ul class="emoji-votes">
+<ul class="small-block-grid-1 medium-8 medium-centered columns">
   <li>
-    <%= link_to "Like", like_story_path(@story, vote_scope: "applaud"), method: :put %>
+    <strong>User:</strong>
+    <%= @story.user.username %>
+    <%= image_tag @story.user.image_url %>
   </li>
-  <li><%= link_to "fresh", like_story_path(@story, vote_scope: "fresh"), method: :put %>
-  <li><%= link_to "lol", like_story_path(@story, vote_scope: "lol"), method: :put %>
-  <li><%= link_to "omg", like_story_path(@story, vote_scope: "omg"), method: :put %>
-  <li><%= link_to "cute", like_story_path(@story, vote_scope: "cute"), method: :put %>
-  <li><%= link_to "win", like_story_path(@story, vote_scope: "win"), method: :put %>
-  <li><%= link_to "fail", like_story_path(@story, vote_scope: "fail"), method: :put %>
-  <li><%= link_to "wtf", like_story_path(@story, vote_scope: "wtf"), method: :put %>
-  <li><%= link_to "popular", like_story_path(@story, vote_scope: "popular"), method: :put %>
+  <li>
+    <strong>Title:</strong>
+    <%= @story.title %>
+  </li>
+  <li>
+    <strong>Content:</strong>
+    <%= @story.content %>
+  </li>
+  <li>
+    <strong>Category</strong>
+  </li>
+
+  <% @story.categories.each do |category| %>
+    <li>
+      <%= category.name %>
+    </li>
+  <% end %>
+  <li>
+    <strong>Location</strong>
+  </li>
+  <% @story.locations.each do |location| %>
+    <li>
+      <%= location.name %>
+    </li>
+  <% end %>
+  <li>
+    <strong><%= @story.get_upvotes.size %> fellows applauding</strong>
+  </li>
+
+  <li>
+    <ul class="emoji-votes">
+      <li>
+        <%= link_to "Like", like_story_path(@story, vote_scope: "applaud"), method: :put %>
+      </li>
+      <li><%= link_to "fresh", like_story_path(@story, vote_scope: "fresh"), method: :put %>
+      <li><%= link_to "lol", like_story_path(@story, vote_scope: "lol"), method: :put %>
+      <li><%= link_to "omg", like_story_path(@story, vote_scope: "omg"), method: :put %>
+      <li><%= link_to "cute", like_story_path(@story, vote_scope: "cute"), method: :put %>
+      <li><%= link_to "win", like_story_path(@story, vote_scope: "win"), method: :put %>
+      <li><%= link_to "fail", like_story_path(@story, vote_scope: "fail"), method: :put %>
+      <li><%= link_to "wtf", like_story_path(@story, vote_scope: "wtf"), method: :put %>
+      <li><%= link_to "popular", like_story_path(@story, vote_scope: "popular"), method: :put %>
+    </ul>
+  </li>
 </ul>
+
+
+
 
 
 <%= render partial: 'comments/form', locals: { commentable: @story } %>
 <%= render partial: 'comments/comment', collection: @comments, locals: { commentable: @story } %>
+
+
 
 <% if current_user %>
   <% if current_user.id == @story.user.id %>
@@ -55,5 +68,7 @@
   <% end %>
 <% end %>
 <%= link_to 'Back', stories_path %>
+
+
 
 
